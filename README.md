@@ -2,7 +2,13 @@
 
 Este é o teste frontend para avaliação de habilidades técnicas. O objetivo é desenvolver uma página web com as seguintes seções: cabeçalho com título do produto e menu de navegação, seção principal com descrição e imagens relacionadas, seção de recursos destacando os principais recursos do produto, seção de depoimentos de clientes com imagens e citações, e um rodapé com links para as redes sociais da empresa e informações de contato.
 
-## Decisões de Desenvolvimento 
+
+## Teste 1
+"Prototipagem e design de interface Seu objetivo é criar um protótipo de *baixa fidelidade* de uma página web responsiva utilizando a
+ ferramenta Figma. A página web deve exibir informações sobre um produto fictício da sua escolha."
+ 
+ Entrega pelo figma:
+(https://www.figma.com/file/9H1eANQeANwL05NAgkzozJ/Desafio-Santri-Sistemas?type=design&node-id=0-1&t=qPnDu7aSBUMofEYr-0)
 
 Durante o desenvolvimento deste projeto, algumas decisões foram tomadas com o intuito de atender aos requisitos e proporcionar uma experiência de usuário agradável. Abaixo, estão mencionadas as decisões mais importantes:
 
