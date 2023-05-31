@@ -7,6 +7,8 @@
  Entrega pelo figma:
 (https://www.figma.com/file/9H1eANQeANwL05NAgkzozJ/Desafio-Santri-Sistemas?type=design&node-id=0-1&t=qPnDu7aSBUMofEYr-0)
 
+PS: Optei por prototipar média e alta fidelidade pois decidi que iria codar as mesmas telas do protótipo. :)
+
 ## Teste 2
 
 Desenvolvimento front-end Nesta tarefa, você deve criar uma página web responsiva utilizando HTML, CSS e JavaScript. A página deve
