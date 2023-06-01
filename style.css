@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*tirando tamanhos pré definidos da estrutura HTML*/
+}
+
+:root{
+
+    /*Paleta de cores*/
+    --laranja: #E05C11;
+    --azul: #2E3F6A;
+    --branco: #fff;
+    --preto: #000;
+    --cinza_claro: #E0DCDC;
+    --cinza_escuro: #828181;
+    /*fonte*/
+
+    --fonte: 'Ubuntu', sans-serif;
+
+}
+
+
+footer{
+    background-color: var(--laranja);
+}
