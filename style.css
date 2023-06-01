@@ -1,12 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*tirando tamanhos pré definidos da estrutura HTML*/
 }
 
-:root{
-
+:root {
     /*Paleta de cores*/
     --laranja: #E05C11;
     --azul: #2E3F6A;
@@ -15,12 +14,170 @@
     --cinza_claro: #E0DCDC;
     --cinza_escuro: #828181;
     /*fonte*/
-
     --fonte: 'Ubuntu', sans-serif;
-
 }
 
 
-footer{
+/*HEADER*/
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #E0DCDC;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicionamento_header {
+    width: 80%;
+    max-width: 1400px;
+    display: flex;
+}
+
+.posicionamento_header img {
+    margin-right: 100px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: var(--fonte);
+    color: var(--azul);
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/*FIM HEADER*/
+
+
+/*MAIN GERAL*/
+
+.posicionamento_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posicionamento_main h1 {
+    display: none;
+    visibility: hidden;
+    /*deixando o h1 visível apenas no leitor de tela*/
+}
+
+
+/*FIM MAIN GERAL*/
+
+
+/*SESSAO 1*/
+
+.container_1 {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 1400px;
+    display: flex;
+}
+
+.produto {
+    width: 764px;
+    height: 100%;
+    max-height: 620px;
+    border: 1px solid #E0DCDC;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.produto img {
+    width: 70%;
+    max-width: 50vh;
+}
+
+.produto_descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto_descricao h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: var(--fonte);
+    color: var(--laranja);
+}
+
+.produto_descricao p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--fonte);
+    color: var(--cinza_escuro);
+}
+
+.produto_valor span,
+.produto_valor p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--azul);
+    font-family: var(--fonte);
+    margin: 0;
+}
+
+.produto_valor p {
+    margin-top: 10px;
+}
+
+.linha {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #E0DCDC;
+}
+
+.header_recursos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_recursos h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: var(--fonte);
+    color: var(--laranja);
+}
+
+.conteudo_recursos ul {
+    padding: 20px;
+}
+
+.conteudo_recursos li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--cinza_escuro);
+    font-family: var(--fonte);
+}
+
+
+/*FIM SESSAO 1*/
+
+footer {
     background-color: var(--laranja);
 }
