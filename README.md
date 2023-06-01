@@ -24,7 +24,6 @@ Durante o desenvolvimento deste projeto, algumas decisões foram tomadas com o i
 
 1. **Organização de arquivos e estrutura do projeto**
 
-2. **Responsividade**: O design da página foi desenvolvido com foco na responsividade, para garantir que o conteúdo se adapte a diferentes dispositivos e tamanhos de tela. Foram utilizadas técnicas de CSS, como media queries, para ajustar o layout e o estilo em diferentes resoluções.
-
+2. **Responsividade**
 
 
