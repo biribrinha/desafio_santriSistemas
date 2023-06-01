@@ -18,6 +18,9 @@ exibir informações sobre um produto fictício da sua escolha e incluir intera�
 3. Adicione interações em JavaScript, como um botão que exibe ou oculta informações adicionais sobre o produto.
 4. Certifique-se de que a página seja compatível com diferentes tamanhos de tela e dispositivos.
 
+Aproveitei pra hospedar o desafio no vercel :)
+https://desafio-santri-sistemas.vercel.app/
+
 ## Organização
 
 Durante o desenvolvimento deste projeto, algumas decisões foram tomadas com o intuito de atender aos requisitos e proporcionar uma experiência de usuário agradável. Abaixo, estão mencionadas as decisões mais importantes:
