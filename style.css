@@ -17,6 +17,24 @@
     --fonte: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--laranja);
+}
+
+p::selection {
+    background: var(--cinza_claro);
+}
+
+h2::selection,
+h3::selection,
+h4::selection {
+    background: var(--azul);
+}
+
 
 /*HEADER*/
 
@@ -57,7 +75,53 @@ header {
     margin-right: 30px;
     font-weight: 500;
     font-size: 18px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+
+/*ANIMACAO LINHA*/
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+.menu a:before,
+.menu a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #40567C;
+}
+
+.menu a:before {
+    left: 0;
+}
+
+.menu a:after {
+    right: 0;
+    background: var(--azul);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu a:hover:before {
+    background: var(--laranja);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+
+/*fim ANIMACAO LINHA*/
 
 
 /*FIM HEADER*/
