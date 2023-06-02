@@ -39,6 +39,9 @@ Para um desenvolvimento com qualidade, utilizei a abordagem UX para garantir que
 
 Gostaria de agradecer a oportunidade, foi muito divertido participar do processo e espero que gostem do resultado! foi feito com muita dedicação e carinho
 
+![Alt Text](https://media.giphy.com/media/y5OffROvBod0s/giphy.gif)
+
+
 
 
 
