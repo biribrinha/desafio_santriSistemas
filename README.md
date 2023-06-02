@@ -13,20 +13,15 @@ PS: Optei por prototipar média e alta fidelidade pois decidi que iria codar as 
 
 Desenvolvimento front-end Nesta tarefa, você deve criar uma página web responsiva utilizando HTML, CSS e JavaScript. A página deve
 exibir informações sobre um produto fictício da sua escolha e incluir interações simples. Considere as seguintes especificações:
-1. Crie uma estrutura HTML adequada para a página, incluindo cabeçalho, seções e rodapé.
-2. Utilize CSS para estilizar a página de forma agradável e responsiva.
-3. Adicione interações em JavaScript, como um botão que exibe ou oculta informações adicionais sobre o produto.
-4. Certifique-se de que a página seja compatível com diferentes tamanhos de tela e dispositivos.
+
+1. Crie uma estrutura HTML adequada para a página, incluindo cabeçalho, seções e rodapé. :white_check_mark:
+2. Utilize CSS para estilizar a página de forma agradável e responsiva. :white_check_mark:
+3. Adicione interações em JavaScript, como um botão que exibe ou oculta informações adicionais sobre o produto. :white_check_mark:
+4. Certifique-se de que a página seja compatível com diferentes tamanhos de tela e dispositivos. :white_check_mark:
 
 Aproveitei pra hospedar o desafio no vercel :)
 https://desafio-santri-sistemas.vercel.app/
 
-## Organização
 
-Durante o desenvolvimento deste projeto, algumas decisões foram tomadas com o intuito de atender aos requisitos e proporcionar uma experiência de usuário agradável. Abaixo, estão mencionadas as decisões mais importantes:
-
-1. **Organização de arquivos e estrutura do projeto**
-
-2. **Responsividade**
 
 
