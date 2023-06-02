@@ -153,9 +153,10 @@ header {
     border: 1px solid #E0DCDC;
 }
 
-#recursos{
+#recursos {
     display: none;
 }
+
 .header_recursos {
     display: flex;
     justify-content: space-between;
@@ -398,7 +399,7 @@ footer {
         margin-right: 0;
     }
 
-    .divisao{
+    .divisao {
         margin-top: 40px;
         margin-bottom: 40px;
         border: 1px solid var(--laranja);
@@ -473,3 +474,26 @@ footer {
 
 
 /* FIM responsivo tablet*/
+
+/* responsivo celular*/
+
+@media (max-width: 624px) {
+
+    .posicionamento_header img {
+        width: 60%;
+    }
+
+    .menu_barras {
+        display: initial;
+        position: absolute;
+        z-index: 1;
+        right: 5px;
+    }
+
+    .logo_footer {
+        width: 155px;
+        height: 33px;
+    }
+}
+
+/* FIM responsivo celular*/
