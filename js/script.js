@@ -26,7 +26,7 @@ function mostrarMinus() {
         recursos.style.display = "initial"
         minus.setAttribute("aria-label", "Esconder Recursos")
         minus.setAttribute("aria-expanded", "true")
-    } else{
+    } else {
         recursos.style.display = "none"
         minus.setAttribute("aria-label", "Mostrar Recursos")
         minus.setAttribute("aria-expanded", "false")
