@@ -35,6 +35,10 @@ https://desafio-santri-sistemas.vercel.app/
 
 Para um desenvolvimento com qualidade, utilizei a abordagem UX para garantir que estivesse intuitivo. Conduzi um teste de usabilidade, enviando o link para alguns amigos e coletei feedbacks. 
 
+##considerações finais
+
+Gostaria de agradecer a oportunidade, foi muito divertido participar do processo e espero que gostem do resultado! foi feito com muita dedicação e carinho
+
 
 
 
