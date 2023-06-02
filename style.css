@@ -188,6 +188,11 @@ header {
     line-height: 40px;
     font-family: var(--fonte);
     color: var(--laranja);
+    cursor: pointer;
+}
+
+#minus {
+    cursor: pointer;
 }
 
 .conteudo_recursos ul {

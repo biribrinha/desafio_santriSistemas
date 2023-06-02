@@ -3,6 +3,9 @@ let menu_barras = document.getElementById("menu_barras");
 let minus = document.getElementById("minus");
 let recursos = document.getElementById("recursos");
 
+let images = Array.from(document.getElementsByClassName("imgCarousel"));
+let mainPhoto = document.getElementById("mainPhoto");
+
 function mostrarMenu() {
     /* verificando a situacao do display menu */
     if (window.getComputedStyle(menu).display == "none") {
@@ -18,7 +21,7 @@ function mostrarMenu() {
         menu_barras.setAttribute("aria-label", "abrir menu")
         menu_barras.setAttribute("aria-expanded", "false")
     }
-}
+};
 
 function mostrarMinus() {
     if (window.getComputedStyle(recursos).display == "none") {
@@ -31,4 +34,15 @@ function mostrarMinus() {
         minus.setAttribute("aria-label", "Mostrar Recursos")
         minus.setAttribute("aria-expanded", "false")
     }
-}
+};
+
+
+
+function mudarImagem(event) {
+    let image = event.target;
+    mainPhoto.src = image.src
+};
+
+images.forEach(function(image) {
+    image.addEventListener("click", mudarImagem);
+});
