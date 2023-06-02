@@ -40,6 +40,11 @@ header {
     margin-right: 100px;
 }
 
+.menu_barras {
+    display: none;
+}
+
+
 .menu {
     width: 100%;
     display: flex;
@@ -148,6 +153,9 @@ header {
     border: 1px solid #E0DCDC;
 }
 
+#recursos{
+    display: none;
+}
 .header_recursos {
     display: flex;
     justify-content: space-between;
@@ -174,6 +182,8 @@ header {
     color: var(--cinza_escuro);
     font-family: var(--fonte);
 }
+
+
 
 
 /*FIM SESSAO 1*/
@@ -344,63 +354,118 @@ footer {
 }
 
 
+
 /*FIM FOOTER*/
 
 
 /*responsivo tablet*/
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
+
+
     header {
-        margin: 0 auto;
-        height: auto;
-    }
-    .posicionamento_header {
+        position: relative;
         align-items: center;
-        flex-direction: column;
     }
-    .posicionamento_header img {
+
+    .posicionamento_header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+
+    }
+
+    .menu_barras {
+        display: initial;
+        position: absolute;
+        z-index: 1;
+        margin: -12px;
+
+    }
+
+
+
+    #menu_links {
+        display: none;
+        text-align: center;
+
+
+    }
+
+    .menu a {
+        color: var(--laranja);
         margin-right: 0;
+    }
+
+    .divisao{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 1px solid var(--laranja);
+    }
+
+
+    .menu {
+        position: absolute;
+        background-color: var(--cinza_claro);
+        height: 600px;
+        margin-top: 550px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 50px;
+    }
+
+
+
+    .posicionamento_header img {
+        margin-right: 270px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .menu {
-        flex-direction: column;
-    }
-    .menu a {
-        margin-bottom: 15px;
-    }
+
+
+
     .container_1 {
         flex-direction: column;
         width: 90%;
         justify-content: center;
         align-items: center;
     }
+
     .produto {
         width: 80%;
     }
+
     .produto img {
         width: 70%;
         max-width: 50vh;
     }
+
     .produto_descricao {
         width: 80%;
     }
+
     .produto_descricao h2 {
         margin-top: 20px;
     }
+
     .card_depoimentos {
         width: 80%;
         height: auto;
     }
+
     .header_card {
         flex-direction: column-reverse;
     }
+
     .user_depoimentos {
         margin-top: 20px;
     }
+
     .posicionamento_footer {
         flex-direction: column-reverse;
     }
+
     .logo_footer {
         margin-top: 40px;
     }
