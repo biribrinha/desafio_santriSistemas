@@ -516,32 +516,27 @@ footer {
     .posicionamento_header {
         display: flex;
         justify-content: space-between;
-        position: relative;
         align-items: center;
     }
 
-    .menu_barras {
-        display: initial;
-        position: absolute;
-        z-index: 1;
-        margin: 7px;
-    }
 
 
     .menu {
-        position:absolute;
+        position: absolute;
         background-color: var(--branco);
         border: 1px solid var(--laranja);
         height: 10px;
-        margin-top: 200px;
-        width: 100%;
+        margin-top: 260px;
+        width: 80%;
         border-radius: 5px;
-        padding: 50px;
+        padding: 80px;
         justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .menu a{
         text-align: center;
+        margin: 15px;
     }
     .posicionamento_header img {
         margin-right: 270px;
