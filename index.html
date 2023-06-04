@@ -1,358 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <!-- Baixando as fontes pelo html para um melhor carregamento -->
-    <title>Desafio Santri Sistemas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <script src="./js/script.js" defer></script>
-    <!-- O defer indica que o javascript vai caregar por ultimo -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <!-- Baixando as fontes pelo html para um melhor carregamento -->
+        <title>Desafio Santri Sistemas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+        <script src="./js/script.js" defer></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
 
-<body>
-    <header>
-        <div class="posicionamento_header">
-            <img src="./img/logo.png" alt="Logo da Santri Home center">
-            <div>
-                <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" href="#" class="menu_barras" onclick="mostrarMenu()">
+    <body>
+        <header>
+            <div class="posicionamento_header">
+                <img src="./img/logo.png" alt="Logo da Santri Home center">
+                <div id="menu_sanduiche">
+                    <a id="menu_barras" aria-label="abrir menu"
+                        aria-controls="menu_links" aria-expanded="false"
+                        aria-haspopup="true" href="#" class="menu_barras"
+                        onclick="mostrarMenu()">
 
-                    <svg width="52" height="35" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="52" height="35" viewBox="0 0 14 10"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1H13M1 5H13M1 9H13" stroke="#E05C11"
                                 stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                            </svg>
+                                stroke-linejoin="round" />
+                        </svg>
 
-                </a>
-            </div>
+                    </a>
 
-            <nav class="menu" id="menu_links">
-                <div class="divisao"></div>
-                <a href="#1">O produto</a>
-                <div class="divisao"></div>
-                <a href="#2">Depoimentos</a>
-                <div class="divisao"></div>
-            </nav>
-
-            <div class="menu-bg" id="menu-bg"></div>
-        </div>
-    </header>
-    <main>
-        <div class="posicionamento_main">
-            <h1 id="1">Página do produto</h1>
-            <!-- O Objetivo é o h1 ficar apenas visível no leitor de tela, para que seja indicado em qual página a pessoa está. Trazendo mais acessibilidade -->
-            <section class="container_1">
-                <div class="galeria">
-
-                    <div class="box_produto">
-                        <img src="./img/fita adesiva.png" alt="" class="imgPrincipal" id="mainPhoto">
-                    </div>
-                    <div class="mini_fotos">
-
-                        <div class="box_produto">
-                            <img src="./img/fita adesiva.png" alt="" class="imgCarousel">
-                        </div>
-
-
-                        <div class="box_produto">
-                            <img src="./img/fita2.png" alt="" class="imgCarousel">
-                        </div>
-
-                        <div class="box_produto">
-                            <img src="./img/fita3.png" alt="" class="imgCarousel">
-                        </div>
-
-                        <div class="box_produto">
-                            <img src="./img/fita4.png" alt="" class="imgCarousel">
-                        </div>
-
-
-                    </div>
                 </div>
 
-                <div class="produto_descricao">
-                    <h2>Fita adesiva</h2>
-                    <p>A Fita impressa é ideal para fechamento de caixas de papelão, promoções, identificação.</p>
-
-                    <div class="produto_valor">
-                        <span>R$ 79,90</span>
-                        <p>Em até 12x sem Juros</p>
-                    </div>
-
-
-                    <div class="linha"></div>
-                    <div class="produto_recursos">
-
-                        <div class="header_recursos">
-                            <h3 class="" onclick="mostrarMinus()">Recursos</h3>
-                            <div class="protudo_btnSumir">
-                                <img src="./img/minus.svg" alt="" id="minus" aria-label="Mostrar Recursos" aria-controls="minus" aria-expanded="false" aria-haspopup="true" href="#" class="minus" onclick="mostrarMinus()">
-                            </div>
-                        </div>
-
-                        <div class="conteudo_recursos" id="recursos">
-                            <ul>
-                                <li>Recurso 1</li>
-                                <li>Recurso 2</li>
-                                <li>Recurso 3</li>
-                                <li>Recurso 4</li>
-                                <li>Recurso 5</li>
-                                <li>Recurso 6</li>
-                                <li>Recurso 7</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class="container_2" id="2">
-                <h4>O que nossos clientes estão dizendo</h4>
-
-                <div class="feed_depoimentos">
-
-                    <div class="card_depoimentos">
-                        <div class="header_card">
-                            <div class="user_depoimentos">
-                                <img src="./img/ana.png" alt="">
-                                <div class="nome_user">
-                                    <span>Ana nascimento</span>
-                                </div>
-                            </div>
-
-                            <div class="avaliacao_depoimentos">
-                                <ul>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="main_card">
-                            <div class="titulo_local">
-                                <h5>Amei o produto</h5>
-                                <span>Avaliado em Curitiba em 01 de
-                                            Janeiro
-                                            de 2023</span>
-                            </div>
-
-                            <div class="descricao_card">
-                                <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mattis quam, a volutpat ipsum. Ut quis nisi quis quam suscipit egestas vel quis nulla.”
-                                </p>
-
-                            </div>
-
-                            <div class="imagem_produto">
-                                <img src="./img/depoimento_foto.png" alt="imagem de uam pessoa segurando
-                                            uma fita adesiva">
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-                    <div class="card_depoimentos">
-                        <div class="header_card">
-                            <div class="user_depoimentos">
-                                <img src="./img/luiz.png" alt="">
-                                <div class="nome_user">
-                                    <span>Luiz Benjamin</span>
-                                </div>
-                            </div>
-
-                            <div class="avaliacao_depoimentos">
-                                <ul>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="main_card">
-                            <div class="titulo_local">
-                                <h5>Amei o produto</h5>
-                                <span>Avaliado em Curitiba em 01 de
-                                            Janeiro
-                                            de 2023</span>
-                            </div>
-
-                            <div class="descricao_card">
-                                <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mattis quam, a volutpat ipsum. Ut quis nisi quis quam suscipit egestas vel quis nulla.”
-                                </p>
-
-                            </div>
-
-                            <div class="imagem_produto">
-                                <img src="./img/depoimento_foto.png" alt="imagem de uam pessoa segurando
-                                            uma fita adesiva">
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-                    <div class="card_depoimentos">
-                        <div class="header_card">
-                            <div class="user_depoimentos">
-                                <img src="./img/carol.png" alt="">
-                                <div class="nome_user">
-                                    <span>Carol Santos</span>
-                                </div>
-                            </div>
-
-                            <div class="avaliacao_depoimentos">
-                                <ul>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="./img/Estrela.svg" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="main_card">
-                            <div class="titulo_local">
-                                <h5>Amei o produto</h5>
-                                <span>Avaliado em Curitiba em 01 de
-                                            Janeiro
-                                            de 2023</span>
-                            </div>
-
-                            <div class="descricao_card">
-                                <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet mattis quam, a volutpat ipsum. Ut quis nisi quis quam suscipit egestas vel quis nulla.”
-                                </p>
-
-                            </div>
-
-                            <div class="imagem_produto">
-                                <img src="./img/depoimento_foto.png" alt="imagem de uam pessoa segurando
-                                            uma fita adesiva">
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="posicionamento_footer">
-            <img src="./img/logo_footer.png" alt="Logo da Santri Home
-                        center" class="logo_footer">
-
-            <div class="contato_footer">
-
-                <nav>
-                    <a href="https://pt-br.facebook.com/santrisoftware/" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/Facebook.svg" alt="Link Para o
-                                    Facebook da empresa">
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/santri-solu%C3%A7%C3%B5es/" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/LinkedIn.svg" alt="Link Para o
-                                    Linkedin da empresa">
-                    </a>
-
-                    <a href="" target="_blank" rel="noopener
-                                noreferrer">
-                        <img src="./img/Youtube.svg" alt="Link Para o
-                                    Youtube da empresa">
-                    </a>
-
-                    <a href="https://www.instagram.com/santrisolucoes" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/Instagram.svg" alt="Link Para o
-                                    Instagram da empresa">
-                    </a>
+                <nav class="menu" id="menu_links">
+                    <a href="#1">O produto</a>
+                    <a href="#2">Depoimentos</a>
                 </nav>
 
-                <div class="info_contato">
 
-                    <div class="contato">
-                        <img src="./img/Shape.svg" alt="Ícone de
+                
+
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </header>
+        <main>
+            <div class="posicionamento_main">
+                <h1 >Página do produto</h1>
+                <!-- O Objetivo é o h1 ficar apenas visível no leitor de tela, para que seja indicado em qual página a pessoa está. Trazendo mais acessibilidade -->
+                <section class="container_1" id="1">
+                    <div class="galeria">
+
+                        <div class="box_produto">
+                            <img src="./img/fita adesiva.png" alt
+                                class="imgPrincipal" id="mainPhoto">
+                        </div>
+                        <div class="mini_fotos">
+
+                            <div class="box_produto">
+                                <img src="./img/fita adesiva.png" alt
+                                    class="imgCarousel">
+                            </div>
+
+                            <div class="box_produto">
+                                <img src="./img/fita2.png" alt
+                                    class="imgCarousel">
+                            </div>
+
+                            <div class="box_produto">
+                                <img src="./img/fita3.png" alt
+                                    class="imgCarousel">
+                            </div>
+
+                            <div class="box_produto">
+                                <img src="./img/fita4.png" alt
+                                    class="imgCarousel">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="produto_descricao">
+                        <h2>Fita adesiva</h2>
+                        <p>A Fita impressa é ideal para fechamento de caixas de
+                            papelão, promoções, identificação.</p>
+
+                        <div class="produto_valor">
+                            <span>R$ 79,90</span>
+                            <p>Em até 12x sem Juros</p>
+                        </div>
+
+                        <div class="linha"></div>
+                        <div class="produto_recursos">
+
+                            <div class="header_recursos">
+                                <h3 class onclick="mostrarMinus()">Recursos</h3>
+                                <div class="protudo_btnSumir">
+
+                                    <input type="checkbox" id="check">
+                                    <label for="check" id>
+                                        <img src="./img/minus.svg" alt
+                                            id="minus"
+                                            aria-label="Mostrar Recursos"
+                                            aria-controls="minus"
+                                            aria-expanded="false"
+                                            aria-haspopup="true" href="#"
+                                            class="minus"
+                                            onclick="mostrarMinus()">
+
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="conteudo_recursos" id="recursos">
+                                <ul>
+                                    <li>Recurso 1</li>
+                                    <li>Recurso 2</li>
+                                    <li>Recurso 3</li>
+                                    <li>Recurso 4</li>
+                                    <li>Recurso 5</li>
+                                    <li>Recurso 6</li>
+                                    <li>Recurso 7</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="container_2" id="2">
+                    <h4>O que nossos clientes estão dizendo</h4>
+
+                    <div class="feed_depoimentos">
+
+                        <div class="card_depoimentos">
+                            <div class="header_card">
+                                <div class="user_depoimentos">
+                                    <img src="./img/ana.png" alt>
+                                    <div class="nome_user">
+                                        <span>Ana nascimento</span>
+                                    </div>
+                                </div>
+
+                                <div class="avaliacao_depoimentos">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="main_card">
+                                <div class="titulo_local">
+                                    <h5>Amei o produto</h5>
+                                    <span>Avaliado em Curitiba em 01 de
+                                        Janeiro
+                                        de 2023</span>
+                                </div>
+
+                                <div class="descricao_card">
+                                    <p> “Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Integer sit amet mattis
+                                        quam, a volutpat ipsum. Ut quis nisi
+                                        quis quam suscipit egestas vel quis
+                                        nulla.”
+                                    </p>
+
+                                </div>
+
+                                <div class="imagem_produto">
+                                    <img src="./img/depoimento_foto.png"
+                                        alt="imagem de uam pessoa segurando
+                                            uma fita adesiva">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card_depoimentos">
+                            <div class="header_card">
+                                <div class="user_depoimentos">
+                                    <img src="./img/luiz.png" alt>
+                                    <div class="nome_user">
+                                        <span>Luiz Benjamin</span>
+                                    </div>
+                                </div>
+
+                                <div class="avaliacao_depoimentos">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="main_card">
+                                <div class="titulo_local">
+                                    <h5>Amei o produto</h5>
+                                    <span>Avaliado em Curitiba em 01 de
+                                        Janeiro
+                                        de 2023</span>
+                                </div>
+
+                                <div class="descricao_card">
+                                    <p> “Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Integer sit amet mattis
+                                        quam, a volutpat ipsum. Ut quis nisi
+                                        quis quam suscipit egestas vel quis
+                                        nulla.”
+                                    </p>
+
+                                </div>
+
+                                <div class="imagem_produto">
+                                    <img src="./img/depoimento_foto.png"
+                                        alt="imagem de uam pessoa segurando
+                                            uma fita adesiva">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card_depoimentos">
+                            <div class="header_card">
+                                <div class="user_depoimentos">
+                                    <img src="./img/carol.png" alt>
+                                    <div class="nome_user">
+                                        <span>Carol Santos</span>
+                                    </div>
+                                </div>
+
+                                <div class="avaliacao_depoimentos">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                        <li>
+                                            <img src="./img/Estrela.svg" alt>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="main_card">
+                                <div class="titulo_local">
+                                    <h5>Amei o produto</h5>
+                                    <span>Avaliado em Curitiba em 01 de
+                                        Janeiro
+                                        de 2023</span>
+                                </div>
+
+                                <div class="descricao_card">
+                                    <p> “Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Integer sit amet mattis
+                                        quam, a volutpat ipsum. Ut quis nisi
+                                        quis quam suscipit egestas vel quis
+                                        nulla.”
+                                    </p>
+
+                                </div>
+
+                                <div class="imagem_produto">
+                                    <img src="./img/depoimento_foto.png"
+                                        alt="imagem de uam pessoa segurando
+                                            uma fita adesiva">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="posicionamento_footer">
+                <img src="./img/logo_footer.png" alt="Logo da Santri Home
+                        center" class="logo_footer">
+
+                <div class="contato_footer">
+
+                    <nav>
+                        <a href="https://pt-br.facebook.com/santrisoftware/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="./img/Facebook.svg" alt="Link Para o
+                                    Facebook da empresa">
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/company/santri-solu%C3%A7%C3%B5es/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="./img/LinkedIn.svg" alt="Link Para o
+                                    Linkedin da empresa">
+                        </a>
+
+                        <a href target="_blank" rel="noopener
+                                noreferrer">
+                            <img src="./img/Youtube.svg" alt="Link Para o
+                                    Youtube da empresa">
+                        </a>
+
+                        <a href="https://www.instagram.com/santrisolucoes"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="./img/Instagram.svg" alt="Link Para o
+                                    Instagram da empresa">
+                        </a>
+                    </nav>
+
+                    <div class="info_contato">
+
+                        <div class="contato">
+                            <img src="./img/Shape.svg" alt="Ícone de
                                     localização">
-                        <div>
-                            <a href="#">Rua Da Fulana, 123</a>
+                            <div>
+                                <a href="#">Rua Da Fulana, 123</a>
+                            </div>
                         </div>
-                    </div>
 
-
-                    <div class="contato">
-                        <img src="./img/Path.svg" alt="Ícone de
+                        <div class="contato">
+                            <img src="./img/Path.svg" alt="Ícone de
                                     telefone">
-                        <div>
-                            <a href="#">(123) 456-7890</a>
+                            <div>
+                                <a href="#">(123) 456-7890</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contato">
-                        <img src="./img/email.svg" alt="Ícone de email">
-                        <div>
-                            <a href="#">email@email.com</a>
+                        <div class="contato">
+                            <img src="./img/email.svg" alt="Ícone de email">
+                            <div>
+                                <a href="#">email@email.com</a>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>

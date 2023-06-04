@@ -36,6 +36,7 @@ h4::selection {
 }
 
 
+
 /*HEADER*/
 
 header {
@@ -191,7 +192,7 @@ header {
     max-width: 100px;
     max-height: 100px;
     padding: 10px;
-  
+
 }
 
 .produto_descricao {
@@ -258,13 +259,26 @@ header {
 
 #minus {
     cursor: pointer;
+
 }
+
+#check{
+    display: none;
+}
+
+#check:checked+label img {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
+
 
 .conteudo_recursos ul {
     padding: 20px;
 }
 
+
 .conteudo_recursos li {
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -272,6 +286,7 @@ header {
     color: var(--cinza_escuro);
     font-family: var(--fonte);
 }
+
 
 
 /*FIM SESSAO 1*/
@@ -444,20 +459,23 @@ footer {
 
 /*FIM FOOTER*/
 
-@media (max-width: 1700px){
+@media (max-width: 1700px) {
 
-    h2{
+    h2 {
         margin-top: 10px;
     }
+
     .container_1 {
         flex-direction: column;
         width: 90%;
         justify-content: center;
         align-items: center;
     }
+
     .produto {
         width: 80%;
     }
+
     .mini_fotos img {
         width: 90%;
         height: 90%;
@@ -465,6 +483,7 @@ footer {
         max-height: 80px;
         padding: 10px;
     }
+
     .produto img {
         width: 70%;
         max-width: 50vh;
@@ -472,9 +491,7 @@ footer {
 
 }
 
-@media (max-width: 1300px){
-
-}
+@media (max-width: 1300px) {}
 
 @media (max-width: 1221px) {
     .mini_fotos img {
@@ -493,57 +510,56 @@ footer {
 
 @media (max-width: 761px) {
     header {
-        position: relative;
         align-items: center;
     }
+
     .posicionamento_header {
         display: flex;
         justify-content: space-between;
         position: relative;
         align-items: center;
     }
+
     .menu_barras {
         display: initial;
         position: absolute;
         z-index: 1;
-        margin: -12px;
+        margin: 7px;
     }
-    #menu_links {
-        display: none;
-        text-align: center;
-    }
-    .menu a {
-        color: var(--laranja);
-        margin-right: 0;
-    }
-    .divisao {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border: 1px solid var(--laranja);
-    }
+
+
     .menu {
-        position: absolute;
-        background-color: var(--cinza_claro);
-        height: 600px;
-        margin-top: 550px;
-        width: calc(100% + 45px);
+        position:absolute;
+        background-color: var(--branco);
+        border: 1px solid var(--laranja);
+        height: 10px;
+        margin-top: 200px;
+        width: 100%;
         border-radius: 5px;
         padding: 50px;
+        justify-content: space-evenly;
+    }
+
+    .menu a{
+        text-align: center;
     }
     .posicionamento_header img {
         margin-right: 270px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .container_1 {
         flex-direction: column;
         width: 90%;
         justify-content: center;
         align-items: center;
     }
+
     .produto {
         width: 80%;
     }
+
     .mini_fotos img {
         width: 90%;
         height: 90%;
@@ -551,32 +567,64 @@ footer {
         max-height: 110px;
         padding: 10px;
     }
+
     .produto img {
         width: 70%;
         max-width: 50vh;
     }
+
     .produto_descricao {
         width: 80%;
     }
+
     .produto_descricao h2 {
         margin-top: 20px;
     }
+
     .card_depoimentos {
         width: 80%;
         height: auto;
     }
+
     .header_card {
         flex-direction: column-reverse;
     }
+
     .user_depoimentos {
         margin-top: 20px;
     }
+
     .posicionamento_footer {
         flex-direction: column-reverse;
     }
+
     .logo_footer {
         margin-top: 40px;
     }
+
+
+
+
+
+    /*ANIMACAO LINHA*/
+
+
+    .menu a:before,
+    .menu a:after {
+
+        background: none;
+    }
+
+
+    .menu a:after {
+        background: none;
+    }
+
+    .menu a:hover:before {
+        background: none;
+    }
+
+
 }
 
 
@@ -589,12 +637,14 @@ footer {
     .posicionamento_header img {
         width: 60%;
     }
+
     .menu_barras {
         display: initial;
         position: absolute;
         z-index: 1;
         right: 5px;
     }
+
     .mini_fotos img {
         width: 90%;
         height: 90%;
@@ -602,6 +652,7 @@ footer {
         max-height: 80px;
         padding: 10px;
     }
+
     .logo_footer {
         width: 155px;
         height: 33px;
